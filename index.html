@@ -15,29 +15,84 @@
             <strong>Payment form example</strong>
         </div>
         <div class="card-body">
+            <div class="alert alert-danger" role="alert">
+                Some fields are missing
+            </div>
             <form>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-5">
                             <div class="mb-3">
                                 <label for="card" class="form-label">Card #</label>
-                                <input type="card" class="form-control" id="card" placeholder="xxxxxxxxxxxxxxxxxx" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="number" class="form-control" id="card" placeholder="xxxxxxxxxxxxxxxxxx"
+                                    aria-label="Username" aria-describedby="basic-addon1">
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="mb-3">
                                 <label for="cvc" class="form-label">CVC #</label>
-                                <input type="cvc" class="form-control" id="cvc">
+                                <input type="number" class="form-control" id="cvc" placeholder="0000">
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="mb-3">
+
                                 <label for="amount" class="form-label">Amount #</label>
-                                <input type="amount" class="form-control" id="amount">
+                                <i class="fa-solid fa-dollar-sign"
+                                    style="display: flex;position: absolute;margin-left: -5px;padding-right: 17px;flex-direction: row-reverse;"></i>
+                                <input type="number" class="form-control" id="amount" placeholder="Amont">
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="First-Name" class="form-label">First Name #</label>
+                                <input type="text" class="form-control" id="First-Name">
+                            </div>
 
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="Last-Name" class="form-label">Last Name #</label>
+                                <input type="text" class="form-control" id="Last-Name">
+                            </div>
+                        </div>
+                    </div>
+                    <!--tercera fila-->
+                     <div class="row">
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="First-Name" class="form-label">First Name #</label>
+                                <input type="text" class="form-control" id="First-Name">
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="Last-Name" class="form-label">Last Name #</label>
+                                <input type="text" class="form-control" id="Last-Name">
+                            </div>
+                        </div>
+                    </div>
+                    <!--cuarta fila-->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="First-Name" class="form-label">First Name #</label>
+                                <input type="text" class="form-control" id="First-Name">
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="Last-Name" class="form-label">Last Name #</label>
+                                <textarea></textarea>
+                                <span>Add any notes here</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->   
             </form>
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
