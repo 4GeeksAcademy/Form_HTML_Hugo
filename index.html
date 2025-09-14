@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="card">
+    <div class="card m-5">
         <div class="card-header">
             <strong>Payment form example</strong>
         </div>
@@ -21,38 +22,41 @@
             <form>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-5">
+                        <div class="col-md-5">
                             <div class="mb-3">
                                 <label for="card" class="form-label">Card #</label>
-                                <input type="number" class="form-control" id="card" placeholder="xxxxxxxxxxxxxxxxxx"
-                                    aria-label="Username" aria-describedby="basic-addon1">
+                                <input required type="number" class="form-control" id="card"
+                                    placeholder="xxxxxxxxxxxxxxxxxx" aria-label="Username"
+                                    aria-describedby="basic-addon1">
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-md-3">
                             <div class="mb-3">
                                 <label for="cvc" class="form-label">CVC #</label>
                                 <input type="number" class="form-control" id="cvc" placeholder="0000">
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-md-4">
                             <div class="mb-3">
-
                                 <label for="amount" class="form-label">Amount #</label>
-                                <i class="fa-solid fa-dollar-sign"
-                                    style="display: flex;position: absolute;margin-left: -5px;padding-right: 17px;flex-direction: row-reverse;"></i>
-                                <input type="number" class="form-control" id="amount" placeholder="Amont">
+                                <div class="position-relative">
+
+                                    <input type="number" class="form-control" id="amount" placeholder="Amont">
+                                    <i
+                                        class="fa-solid fa-dollar-sign d-flex position-absolute top-25 start-0 translate-middle"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <div class="mb-3">
                                 <label for="First-Name" class="form-label">First Name #</label>
                                 <input type="text" class="form-control" id="First-Name">
                             </div>
 
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <div class="mb-3">
                                 <label for="Last-Name" class="form-label">Last Name #</label>
                                 <input type="text" class="form-control" id="Last-Name">
@@ -61,14 +65,14 @@
                     </div>
                     <!--tercera fila-->
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <div class="mb-3">
                                 <label for="First-Name" class="form-label">First Name #</label>
                                 <input type="text" class="form-control" id="First-Name">
                             </div>
 
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-md-3">
                             <div class="mb-3">
                                 <label for="Last-Name" class="form-label">Last Name #</label>
                                 <select class="form-select" aria-label="Default select example">
@@ -79,7 +83,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-md-3">
                             <div class="mb-3">
                                 <label for="First-Name" class="form-label">Postal Code</label>
                                 <input type="text" class="form-control" id="First-Name">
@@ -90,49 +94,56 @@
                     <!--cuarta fila-->
                     <div class="row">
 
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <div class="mb-3">
                                 <label for="First-Name" class="form-label">We accept:</label>
-                                <div class="input-group mb-3" style="background-color: grey;">
+                                <div class="p-2 rounded-1 w-fit input-group mb-3 text-white bg-secondary">
 
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions"
                                             id="inlineRadio1" value="option1">
-                                        <label class="form-check-label" for="inlineRadio1">1</label>
+                                        <label class="form-check-label" for="inlineRadio1"><i
+                                                class="fa-brands fa-cc-visa"></i></label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions"
                                             id="inlineRadio2" value="option2">
-                                        <label class="form-check-label" for="inlineRadio2">2</label>
+                                        <label class="form-check-label" for="inlineRadio2"><i
+                                                class="fa-brands fa-cc-mastercard"></i></label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions"
                                             id="inlineRadio3" value="option3">
-                                        <label class="form-check-label" for="inlineRadio3">3</label>
+                                        <label class="form-check-label" for="inlineRadio3"><i
+                                                class="fa-brands fa-cc-diners-club"></i></label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions"
                                             id="inlineRadio4" value="option4">
-                                        <label class="form-check-label" for="inlineRadio4">4</label>
+                                        <label class="form-check-label" for="inlineRadio4"><i
+                                                class="fa-brands fa-cc-amex"></i></label>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <div class="mb-3">
-                                <label for="Last-Name" class="form-label">Message</label>
-                                <textarea></textarea>
+                                <label for="text-area" class="form-label">Message</label>
+                                <textarea id="text-area" rows="5" class="form-control"
+                                    placeholder="Write a note"></textarea>
                                 <span>Add any notes here</span>
                             </div>
                         </div>
                     </div>
-                    <!---->
-            </form>
+                    <div class="card-footer text-body-secondary">
+                        <button type="submit" class="btn btn-primary">send</button>
+                    </div>
+                    
+                    </form>
 
         </div>
-        <div class="card-footer text-body-secondary">
-        </div>
+
     </div>
 </body>
 
